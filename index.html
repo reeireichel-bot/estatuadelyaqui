@@ -3,45 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estatua del Yaqui - Modelo 3D Interactivo</title>
+    <title>Estatua del Yaqui - Danza del Venado</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>ESTATUA DEL YAQUI - MODELO 3D INTERACTIVO</h1>
+        <h1>ESTATUA DEL YAQUI - INTERACTIVO</h1>
         <p>Proyecto de: **Axel Damian Ávalos Encinas** | Grupo: **6B-TP**</p>
     </header>
 
-    <main>
-        <div id="container-3d">
-            <!-- Aquí se renderizará el modelo -->
+    <main style="display: flex; flex-direction: column; align-items: center; padding: 20px;">
+        <div class="sketchfab-embed-wrapper" style="width: 90%; height: 500px;">
+            <!-- Este es el visor interactivo de la Danza del Venado -->
+            <iframe title="Danza del Venado" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/c681f211516f4948a970e7a77e53f191/embed" style="width: 100%; height: 100%; border-radius: 10px; border: 2px solid #444;"> </iframe>
         </div>
 
-        <aside class="controls">
-            <h3>Control de Visualización</h3>
-            <div class="button-group">
-                <button onclick="resetCamera()">RESET</button>
-            </div>
-            <div class="info-box">
-                <h4>Detalles del Modelo</h4>
-                <ul>
-                    <li><strong>Altura:</strong> 30m (Referencia real)</li>
-                    <li><strong>Contexto:</strong> Danza del Venado</li>
-                    <li><strong>Ubicación:</strong> Sonora, México</li>
-                </ul>
-            </div>
-        </aside>
+        <div class="info-box" style="margin-top: 20px; width: 80%; background: #222; padding: 15px; border-radius: 8px; border-left: 5px solid #d4af37;">
+            <h4>Detalles de la Obra</h4>
+            <p>La **Danza del Venado** es una de las tradiciones más emblemáticas de la cultura Yaqui en Sonora. Este modelo permite apreciar la vestimenta tradicional y el tocado de cabeza de venado.</p>
+        </div>
     </main>
-
-    <!-- Importar Three.js desde CDN -->
-    <script type="importmap">
-        {
-            "imports": {
-                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
-                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
-            }
-        }
-    </script>
-    <script type="module" src="script.js"></script>
 </body>
 </html>
