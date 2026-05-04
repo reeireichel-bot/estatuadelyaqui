@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estatua del Yaqui - Modelo 3D Interactivo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>ESTATUA DEL YAQUI - MODELO 3D INTERACTIVO</h1>
+        <p>Proyecto de: **Axel Damian Ávalos Encinas** | Grupo: **6B-TP**</p>
+    </header>
+
+    <main>
+        <div id="container-3d">
+            <!-- Aquí se renderizará el modelo -->
+        </div>
+
+        <aside class="controls">
+            <h3>Control de Visualización</h3>
+            <div class="button-group">
+                <button onclick="resetCamera()">RESET</button>
+            </div>
+            <div class="info-box">
+                <h4>Detalles del Modelo</h4>
+                <ul>
+                    <li><strong>Altura:</strong> 30m (Referencia real)</li>
+                    <li><strong>Contexto:</strong> Danza del Venado</li>
+                    <li><strong>Ubicación:</strong> Sonora, México</li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Importar Three.js desde CDN -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
