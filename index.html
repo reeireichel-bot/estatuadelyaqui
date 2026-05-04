@@ -3,24 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estatua del Yaqui - Danza del Venado</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Estatua del Yaqui - Axel Damian</title>
+    <style>
+        body { margin: 0; font-family: sans-serif; background-color: #000; color: white; overflow: hidden; }
+        header { background: #111; padding: 15px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #333; }
+        main { display: flex; flex-direction: column; align-items: center; height: 100vh; }
+        .canvas-container { width: 100%; height: 70vh; background: #000; }
+        .info { padding: 20px; text-align: center; max-width: 800px; }
+        h1 { font-size: 1.2rem; margin: 0; }
+        p { font-size: 0.9rem; color: #aaa; }
+    </style>
 </head>
 <body>
     <header>
         <h1>ESTATUA DEL YAQUI - INTERACTIVO</h1>
-        <p>Proyecto de: **Axel Damian Ávalos Encinas** | Grupo: **6B-TP**</p>
+        <div>
+            <strong>Axel Damian Ávalos Encinas</strong> | Grupo: <strong>6B-TP</strong>
+        </div>
     </header>
 
-    <main style="display: flex; flex-direction: column; align-items: center; padding: 20px;">
-        <div class="sketchfab-embed-wrapper" style="width: 90%; height: 500px;">
-            <!-- Este es el visor interactivo de la Danza del Venado -->
-            <iframe title="Danza del Venado" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/c681f211516f4948a970e7a77e53f191/embed" style="width: 100%; height: 100%; border-radius: 10px; border: 2px solid #444;"> </iframe>
+    <main>
+        <div class="canvas-container">
+            <!-- Este es el visor del modelo 3D -->
+            <iframe title="Danza del Venado" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking src="https://sketchfab.com/models/c681f211516f4948a970e7a77e53f191/embed" style="width: 100%; height: 100%;"></iframe>
         </div>
-
-        <div class="info-box" style="margin-top: 20px; width: 80%; background: #222; padding: 15px; border-radius: 8px; border-left: 5px solid #d4af37;">
-            <h4>Detalles de la Obra</h4>
-            <p>La **Danza del Venado** es una de las tradiciones más emblemáticas de la cultura Yaqui en Sonora. Este modelo permite apreciar la vestimenta tradicional y el tocado de cabeza de venado.</p>
+        
+        <div class="info">
+            <h3>Detalles del Modelo</h3>
+            <p>Representación interactiva de la Danza del Venado, símbolo de la cultura Yaqui en Sonora, México. Este modelo permite una visualización de 360 grados de los elementos tradicionales.</p>
         </div>
     </main>
 </body>
